@@ -1,16 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Samsung TV Remote by Bluespacestudioz.">
+  <meta name="description" content="Privacy Policy for Samsung TV Remote by BlueSpace Studios.">
   <title>Privacy Policy | Samsung TV Remote</title>
   <style>
     :root { color-scheme: light; --ink:#17202a; --muted:#5d6875; --line:#dbe2e8; --panel:#f5f8fa; --accent:#155eef; }
     * { box-sizing:border-box; }
     body { margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    .wrap { width:min(100% - 32px, 860px); margin:0 auto; }
+    .wrap { width:min(100% - 32px, 900px); margin:0 auto; }
     header { padding:48px 0 28px; border-bottom:1px solid var(--line); }
     h1,h2,h3 { line-height:1.25; }
     h1 { margin:0 0 8px; font-size:clamp(2rem,6vw,3rem); letter-spacing:-.03em; }
@@ -29,9 +28,7 @@
     table { width:100%; border-collapse:collapse; margin:14px 0 20px; font-size:.95rem; }
     th,td { padding:10px 12px; border:1px solid var(--line); text-align:left; vertical-align:top; }
     th { background:var(--panel); }
-    .notice { padding:16px 18px; margin:18px 0; border-left:4px solid var(--accent); background:#f2f6ff; }
-    footer { margin:48px 0 32px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); }
-    @media (max-width:600px) { .wrap { width:min(100% - 24px, 860px); } header { padding-top:32px; } nav ol { columns:1; } th,td { padding:8px; } }
+    @media (max-width:600px) { .wrap { width:min(100% - 24px, 900px); } header { padding-top:32px; } nav ol { columns:1; } th,td { padding:8px; } }
   </style>
 </head>
 <body>
@@ -39,7 +36,7 @@
     <div class="wrap">
       <h1>Privacy Policy</h1>
       <p><strong>Samsung TV Remote</strong></p>
-      <p class="meta">Provided by Bluespacestudioz · Last updated: September 10, 2026</p>
+      <p class="meta">Provided by BlueSpace Studios · Last updated: September 20, 2026 · Android version 1.0 (version code 2)</p>
     </div>
   </header>
 
@@ -47,153 +44,190 @@
     <nav aria-label="Table of contents">
       <h2>Contents</h2>
       <ol>
-        <li><a href="#introduction">About This Policy</a></li>
-        <li><a href="#information">Information We Collect</a></li>
+        <li><a href="#about">About This Policy</a></li>
+        <li><a href="#collect">Information We Collect</a></li>
+        <li><a href="#permissions">Permissions and Device Access</a></li>
         <li><a href="#use">How We Use Information</a></li>
-        <li><a href="#services">Third-Party Services</a></li>
-        <li><a href="#advertising">Advertising and Advertising ID</a></li>
-        <li><a href="#sharing">Data Sharing and Disclosure</a></li>
-        <li><a href="#retention">Data Retention and Deletion</a></li>
+        <li><a href="#services">Service Providers and Integrations</a></li>
+        <li><a href="#ads">Advertising and Consent</a></li>
+        <li><a href="#sharing">Sharing and Disclosure</a></li>
+        <li><a href="#retention">Retention and Deletion</a></li>
         <li><a href="#rights">Your Rights and Choices</a></li>
+        <li><a href="#legal-bases">Legal Bases and Jurisdiction</a></li>
+        <li><a href="#transfers">International Transfers</a></li>
+        <li><a href="#security">Security</a></li>
         <li><a href="#children">Children's Privacy</a></li>
-        <li><a href="#security">Data Security</a></li>
-        <li><a href="#transfers">International Data Transfers</a></li>
+        <li><a href="#tracking">Cookies and Similar Technologies</a></li>
         <li><a href="#changes">Changes to This Policy</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ol>
     </nav>
 
-    <section id="introduction">
-      <h2>About This Policy</h2>
-      <p>Samsung TV Remote is a general-purpose utility that discovers and controls compatible Samsung TVs over the user's local network. This policy explains what information the app accesses, what remains on the device, what is sent to our service providers, and the choices available to you.</p>
-      <p>The app does not require a user-created account to control a TV. An anonymous Firebase identifier is created only when the in-app support chat is used so that the conversation can be associated with the same installation.</p>
+    <section id="about">
+      <h2>1. About This Policy</h2>
+      <p>Samsung TV Remote is a utility that discovers and controls compatible Samsung TVs over the user's local network. This policy explains what the app stores on your device, what it sends to Google and Firebase services, and the choices available to you.</p>
+      <p>You do not need to create a personal account to discover, pair with, or control a TV.</p>
+      <p>Samsung TV Remote is independent from Samsung Electronics Co., Ltd. “Samsung” and related marks belong to their respective owners.</p>
     </section>
 
-    <section id="information">
-      <h2>Information We Collect</h2>
+    <section id="collect">
+      <h2>2. Information We Collect</h2>
 
-      <h3>Information you provide directly</h3>
+      <h3>Information stored locally on your device</h3>
+      <p>To make the remote work across sessions, the app stores information in its Android app sandbox, including:</p>
       <ul>
-        <li><strong>TV and device setup information:</strong> a TV name, IP address, MAC address when supplied or discovered, protocol and port, discovery aliases, and pairing or session credentials needed to reconnect to a TV. These values are stored locally on your Android device.</li>
-        <li><strong>Support messages:</strong> if you use Support Chat, the message text and message timestamps are sent to our Firebase Cloud Firestore support system. Do not include passwords, payment information, PINs, or other information you do not want support personnel to receive.</li>
-        <li><strong>Preferences:</strong> settings such as language, theme, notification choices, navigation mode, saved-device choices, and other app preferences are stored locally.</li>
+        <li>TV name, brand, local IP address, port, protocol, connection settings, discovery aliases or identifiers, and MAC address when available or entered for Wake-on-LAN;</li>
+        <li>Samsung pairing or session credentials needed to reconnect to a TV;</li>
+        <li>room labels, favorites, last-used and last-seen times, selected TV apps or quick-launch items, and other device preferences; and</li>
+        <li>language, theme, navigation, notification, onboarding, consent, and other app settings.</li>
+      </ul>
+      <p>These TV records and remote commands are used for local control and are not intentionally uploaded to BlueSpace Studios. Some TV information, such as installed-app names or icons, may be read from the TV and kept temporarily on the device for display.</p>
+
+      <h3>Information you provide</h3>
+      <ul>
+        <li><strong>Manual setup:</strong> any TV name, IP address, port, MAC address, or other connection value that you enter.</li>
+        <li><strong>Email feedback:</strong> if you choose the email option, the app opens your email client with a draft containing the phone model, app version, Android version, and a blank area for your feedback. Nothing is emailed by the app until you choose an email provider and send it.</li>
       </ul>
 
-      <h3>Information collected automatically by the app and its services</h3>
+      <h3>Analytics and technical information</h3>
+      <p>Firebase Analytics receives app events such as discovery, connection, pairing, command, update, notification-permission, rating, and error outcomes. Events may include app version, device manufacturer and model, Android version, locale, time zone or country, low-cardinality connection labels, and coarse network status such as Wi-Fi, VPN, cellular, or whether a LAN scan is possible.</p>
+      <p>Analytics and other Firebase SDKs may use identifiers such as a Firebase app-instance ID, Firebase Installation ID, Crashlytics installation identifier, and Android Advertising ID where available. The app is designed not to put TV IP addresses, MAC addresses, pairing PINs, authentication tokens, or raw WebSocket data in Analytics events.</p>
+      <p>These analytics events are sent through Google's Firebase SDKs. BlueSpace Studios does not copy them into a separate analytics server or database; we may only view the reports and events that Google makes available in the Firebase console. Google controls the provider-side collection, processing, retention, and console visibility.</p>
+
+      <h3>Crash and stability information</h3>
+      <p>Firebase Crashlytics may receive crash stack traces, non-fatal error reports, device and app metadata, connection phase, TV brand and protocol, port, breadcrumbs, and developer-defined diagnostics. The current app may also attach the display name you assigned to a TV to a crash report. The app is designed to avoid logging credentials, PINs, IP addresses, MAC addresses, and raw TV messages, but no diagnostic system can guarantee that every third-party exception detail is free of sensitive text.</p>
+    </section>
+
+    <section id="permissions">
+      <h2>3. Permissions and Device Access</h2>
+      <p>The app requests or uses the following Android capabilities:</p>
       <ul>
-        <li><strong>Usage and app events:</strong> screen/session activity and technical events such as discovery, connection, pairing, command, update, and error outcomes. Event parameters are designed to use low-cardinality technical labels; the app does not intentionally send TV IP addresses, MAC addresses, pairing PINs, auth tokens, or raw WebSocket data to Analytics.</li>
-        <li><strong>Device and app information:</strong> app version, Android version, device manufacturer and model, language/locale, time zone or country information, and technical diagnostics used for analytics, update delivery, and crash investigation.</li>
-        <li><strong>Identifiers:</strong> Google Analytics app-instance identifiers, Firebase Installation ID, Crashlytics installation UUID, and an anonymous Firebase Authentication user ID for Support Chat. Firebase Analytics may also access the Android Advertising ID unless that collection is disabled by the app configuration or by Android.</li>
-        <li><strong>Coarse location signals:</strong> Google Analytics may derive general or approximate location from a masked IP address. The app itself does not request precise-location or approximate-location runtime permissions and does not use location to provide TV control.</li>
-        <li><strong>Crash information:</strong> crash stack traces, relevant app state, device metadata, developer-defined crash keys, and breadcrumbs immediately before a crash. Crash keys are intended to exclude IP addresses, MAC addresses, PINs, and authentication tokens.</li>
+        <li>Internet, network state, Wi-Fi state, and multicast access to discover and control TVs on your local network and to communicate with Google/Firebase services;</li>
+        <li>a connected-device foreground service and Wi-Fi wake lock to keep an active TV session working when the app is minimized;</li>
+        <li>notifications, when you allow them, for connection status and remote-control actions;</li>
+        <li>boot-completed access to restore the app's quick-control state after a restart; and</li>
+        <li>gyroscope and gravity sensors, when available, for the optional air-mouse feature. Sensor readings are used on the device to create cursor movement and are not intentionally uploaded.</li>
       </ul>
-
-      <h3>Information collected for support diagnostics</h3>
-      <p>When Support Chat sends a message, or when support requests a fresh diagnostic snapshot, the support record may include the Android manufacturer and model, Android version, app version, number and brand/platform summary of saved TVs, network transport and a network-problem category, locale, approximate time since installation, and the Firebase Analytics app-instance ID. The diagnostic snapshot is designed not to include TV IP addresses, MAC addresses, TV names, raw message content, pairing credentials, or authentication tokens.</p>
-
-      <h3>Permissions and local-network access</h3>
-      <p>The app uses Internet and network-state access to communicate with Firebase and compatible TVs; Wi-Fi and multicast access to discover TVs; a connected-device foreground service and wake lock to keep an active session working; notification access for the remote-control notification; and boot-completed access to restore the app's quick-control state. The Android build also includes the Advertising ID and related Google services permissions through Firebase Analytics. No contacts, camera, microphone, phone number, SMS, or precise-location permission is requested by the audited release manifest.</p>
-
-      <div class="notice"><strong>Google Play Data Safety:</strong> the Play Console declaration must cover the complete behavior of every currently distributed version, including data sent by SDKs. For this build, review at least app activity, app information and performance, device or other identifiers, approximate/general location derived by Analytics, support-message content, and anonymous authentication data. Local-only TV records do not constitute off-device collection until they are transmitted.</div>
+      <p>The current Android build does not request contacts, camera, phone, SMS, or precise-location permissions. The app does not request a microphone permission itself. If you tap voice input, Android launches the speech-recognition service selected on your device; that service may use the microphone and may send audio to its own provider. Samsung TV Remote receives the resulting text and lets you review or edit it before sending it to the TV.</p>
     </section>
 
     <section id="use">
-      <h2>How We Use Information</h2>
+      <h2>4. How We Use Information</h2>
       <ul>
-        <li>To discover, pair with, reconnect to, and control compatible TVs on your local network.</li>
-        <li>To save your selected TV and preferences so the app works across sessions.</li>
-        <li>To provide Support Chat, investigate connection problems, and respond to support requests.</li>
-        <li>To measure app usage, diagnose crashes, improve reliability, and understand which connection paths need improvement.</li>
-        <li>To deliver remote configuration and version-update notices, maintain service security, prevent abuse, and comply with law.</li>
+        <li>discover, pair with, reconnect to, and control compatible Samsung TVs on your local network;</li>
+        <li>save your selected TV, credentials, and preferences so the app works across sessions;</li>
+        <li>respond to feedback you send by email and investigate connection problems;</li>
+        <li>measure app usage, diagnose crashes, improve reliability, and understand which connection paths need improvement;</li>
+        <li>show and measure advertising after the applicable Google consent decision;</li>
+        <li>deliver remote configuration, update notices, and version-compatibility checks; and</li>
+        <li>protect the service, prevent abuse, enforce rate limits, comply with law, and protect users and our rights.</li>
       </ul>
-      <p>For users in the EEA, the UK, and Switzerland, the legal basis depends on the purpose: performance of the requested app service or support service; our legitimate interests in security, reliability, and product improvement; compliance with legal obligations; and consent where consent is required, including for any future personalized advertising or other optional processing.</p>
+      <p>We do not use your saved TV records or email feedback to build a personal profile for direct marketing.</p>
     </section>
 
     <section id="services">
-      <h2>Third-Party Services</h2>
-      <p>The current Android project and release build use the following Google Firebase services. They process data on our behalf or provide the technical service described below:</p>
-      <ul>
-        <li><strong>Google Analytics for Firebase</strong> — app-instance ID, Advertising ID where available, app lifecycle and usage events, device/app information, and coarse location derived from masked IP. Used for product analytics and reliability analysis. See <a href="https://support.google.com/analytics/answer/6318039" rel="noopener">Google Analytics data collection</a>.</li>
-        <li><strong>Firebase Crashlytics</strong> — crash reports, relevant app/device metadata, installation identifiers, developer-defined keys, and Analytics breadcrumbs. Used to diagnose crashes and stability issues. See <a href="https://firebase.google.com/docs/crashlytics" rel="noopener">Firebase Crashlytics</a>.</li>
-        <li><strong>Firebase Remote Config</strong> — app/package and version information, platform and OS information, language, country, time zone, Firebase app ID, and installation-related identifiers. Used to deliver update and feature configuration. See <a href="https://firebase.google.com/docs/remote-config" rel="noopener">Firebase Remote Config</a>.</li>
-        <li><strong>Firebase Authentication</strong> — an anonymous user ID, Firebase app ID, IP address, and technical user-agent information used to create and protect the anonymous Support Chat session. No email, password, or social-login account is used by the audited app. See <a href="https://firebase.google.com/docs/auth" rel="noopener">Firebase Authentication</a>.</li>
-        <li><strong>Cloud Firestore</strong> — Support Chat messages, timestamps, the support diagnostics described above, and the anonymous Firebase user ID used to scope the support thread. See <a href="https://firebase.google.com/docs/firestore" rel="noopener">Cloud Firestore</a>.</li>
-      </ul>
-      <p>For more information about Firebase's privacy and security practices, see <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</p>
+      <h2>5. Service Providers and Integrations</h2>
+      <p>The current Android build uses the following third-party services. They may process information on our behalf or under their own terms to provide the service:</p>
+      <table>
+        <thead><tr><th>Service</th><th>Purpose and information</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Google Analytics for Firebase</strong></td><td>App events, app-instance and installation identifiers, device/app information, Advertising ID where available, and coarse location or region inferred by Google from network information.</td></tr>
+          <tr><td><strong>Firebase Crashlytics</strong></td><td>Crash and non-fatal error reports, stack traces, breadcrumbs, installation identifiers, device/app metadata, and selected connection diagnostics.</td></tr>
+          <tr><td><strong>Firebase Remote Config and Firebase Installations</strong></td><td>App/package version, platform and OS information, language, country or time zone, Firebase app ID, installation-related identifiers, and configuration requests used for update and feature settings.</td></tr>
+          <tr><td><strong>Google Mobile Ads and User Messaging Platform</strong></td><td>Banner, interstitial, and app-open ads; consent choices; advertising and app/device identifiers; IP address, approximate location, ad-request context, and ad interactions, subject to your consent and Google's settings.</td></tr>
+          <tr><td><strong>Google Play and Android speech recognition</strong></td><td>Google Play handles store-listing, update, and app-distribution activity when you use those features. The speech-recognition service you select handles voice input and returns a transcript under its own privacy policy.</td></tr>
+        </tbody>
+      </table>
+      <p>See <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy and Security</a>, <a href="https://firebase.google.com/docs/crashlytics" rel="noopener">Crashlytics information</a>, and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener">Google Mobile Ads data disclosure</a> for the providers' current practices.</p>
     </section>
 
-    <section id="advertising">
-      <h2>Advertising and Advertising ID</h2>
-      <p>The audited source, Gradle dependency graph, merged release manifest, and release APK do not contain the Google Mobile Ads SDK, Google UMP SDK, or an AdMob mediation adapter. Accordingly, this audited version does not currently serve ads through AdMob.</p>
-      <p>Firebase Analytics does bring the Android Advertising ID permission into the merged release manifest and may collect the Advertising ID by default for Analytics. You can reset or delete the Advertising ID, or restrict its use, in Android settings. You can also contact us about disabling applicable Analytics collection.</p>
-      <p>The project brief describes Google AdMob mediation as intended. If a Play-distributed build actually includes AdMob or mediation partners, this policy and the Play Data Safety declaration must be updated before that build is published to name Google Mobile Ads, each active mediation partner, the data each partner processes, and the applicable consent choices. For AdMob requirements, see <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener">Google Mobile Ads data disclosure</a> and <a href="https://support.google.com/admob/answer/13554116" rel="noopener">Google's EU/UK/Swiss consent requirements</a>.</p>
+    <section id="ads">
+      <h2>6. Advertising and Consent</h2>
+      <p>The current build serves Google Mobile Ads banner, interstitial, and app-open ads on eligible screens. Full-screen ads are blocked during onboarding and text-entry flows; banner availability follows the screen's ad eligibility. The Google User Messaging Platform is used to request and record the consent choices required in applicable regions before ad requests are enabled.</p>
+      <p>For users in the European Economic Area, the United Kingdom, and Switzerland, Google UMP may show a consent form before ads are requested when the applicable rules require it. You can choose whether to allow personalized advertising or decline or limit consent. Depending on Google's response and your choice, ad requests may be limited to non-personalized ads or not made. When Google marks privacy options as required, you can withdraw or change your choice from <strong>Settings → Privacy Options</strong>.</p>
+      <p>Depending on your location, settings, and consent, Google may serve personalized or non-personalized advertising. Google may process the Android Advertising ID, IP address, approximate location, device and app information, ad-request context, and ad interactions. Resetting or deleting the Advertising ID in Android settings may reduce personalized advertising, but does not stop all ad requests.</p>
+      <p>When Google provides a privacy-options control, you can revisit ad choices from the app's <strong>Settings → Privacy Options</strong> screen. If the control is not shown, the applicable region or Google consent status may not require it. We do not directly sell your saved-TV records or email feedback. Advertising providers may process identifiers and technical data under their own terms, and applicable law may treat some personalized-ad processing as “sharing.”</p>
     </section>
 
     <section id="sharing">
-      <h2>Data Sharing and Disclosure</h2>
-      <p>We share information only as described in this policy:</p>
+      <h2>7. Sharing and Disclosure</h2>
+      <p>We disclose information only as needed for the purposes in this policy:</p>
       <ul>
-        <li>With Google and Firebase service providers to provide Analytics, Crashlytics, Remote Config, Authentication, and Firestore.</li>
-        <li>With authorized Bluespacestudioz support personnel when you use Support Chat, so they can read and answer your message and its attached diagnostic summary.</li>
-        <li>When necessary to comply with law, protect the rights or safety of users or the service, investigate abuse, or respond to a lawful request.</li>
-        <li>In connection with a merger, acquisition, financing, or sale of all or part of the business, subject to applicable confidentiality and legal requirements.</li>
+        <li>to Google and Firebase service providers listed above;</li>
+        <li>to authorized BlueSpace Studios personnel when you send us an email;</li>
+        <li>to your selected email provider if you choose to send feedback by email;</li>
+        <li>to authorities, advisers, or other parties when necessary to comply with law, protect safety or rights, investigate abuse, or respond to a lawful request; and</li>
+        <li>to a successor or adviser in a merger, acquisition, financing, or sale of all or part of the business, subject to applicable confidentiality and legal requirements.</li>
       </ul>
-      <p>Bluespacestudioz does not sell your support messages, saved-TV records, or support diagnostics, and does not share them with third parties for their own direct marketing. Google and Firebase may process identifiers and technical data under their own terms and privacy policies to provide their services, maintain security, measure usage, and comply with law.</p>
+      <p>We do not sell saved-TV records or email feedback to data brokers or use them for third-party direct marketing. Google and other providers may be independent controllers for some processing and may use their own privacy notices.</p>
     </section>
 
     <section id="retention">
-      <h2>Data Retention and Deletion</h2>
+      <h2>8. Retention and Deletion</h2>
+      <p>You do not create an account for the TV-control features, and BlueSpace Studios does not maintain a searchable copy of your saved-TV records or Firebase Analytics events.</p>
       <ul>
-        <li><strong>Local TV records and preferences:</strong> retained on your device until you remove the saved TV, clear the app's data, or uninstall the app. Pairing/session credentials are removed when the associated saved TV is removed, subject to normal device backup or operating-system behavior.</li>
-        <li><strong>Support Chat:</strong> active support threads are retained while needed to provide support. Closed support threads and messages are automatically deleted under the Firebase Cloud Firestore time-to-live configuration after the configured support-retention period. A deletion request may be made at any time.</li>
-        <li><strong>Crashlytics:</strong> Firebase states that crash stack traces and associated identifiers are retained for 90 days before removal begins, subject to Google's current service operation and backup processes.</li>
-        <li><strong>Analytics and Remote Config:</strong> retained according to the Firebase project settings and Google's service practices for as long as needed for analytics, security, troubleshooting, and service operation. Aggregated or de-identified reports may remain after source records are deleted.</li>
+        <li><strong>Local TV records, credentials, and preferences:</strong> kept on your device until you remove the TV, clear app data, or uninstall the app. The current Android backup rules exclude the app database and its settings and pairing-credential files from cloud backup and device transfer.</li>
+        <li><strong>Firebase Analytics and Crashlytics:</strong> sent to Google only when the relevant SDK records an event or diagnostic. The Android app does not set a 30–40-minute deletion timer and does not keep a second copy. Google and Firebase control provider-side retention and Firebase console visibility under their project settings and current service practices.</li>
+        <li><strong>Advertising and Remote Config:</strong> retained by Google or the relevant provider according to its settings, service terms, and legal obligations.</li>
+        <li><strong>Email feedback:</strong> if you choose to send the draft email, the message is stored by your selected email provider and mailbox rather than by an in-app account database.</li>
       </ul>
-      <p>Retention may be longer where required for legal claims, security investigations, fraud prevention, or legal compliance.</p>
+      <p>Temporary visibility or disappearance of an event in the Firebase console is not a promise of a specific retention period. We may retain email information or other information we directly receive when needed for legal claims, security investigations, fraud prevention, or legal compliance.</p>
     </section>
 
     <section id="rights">
-      <h2>Your Rights and Choices</h2>
-      <p>You may remove saved TVs and local preferences through the app or Android settings. You may also request access to, correction of, or deletion of personal information associated with your Support Chat by emailing <a href="mailto:bluespacestudioz.support@gmail.com">bluespacestudioz.support@gmail.com</a>. Please include enough information for us to locate the relevant anonymous support thread without sending passwords or other sensitive credentials.</p>
-      <p>Depending on where you live, you may have rights to access, correct, delete, restrict, object to, or receive a portable copy of your personal information, and to withdraw consent where processing is based on consent. You may lodge a complaint with your local data-protection supervisory authority. We may need to verify a request and may retain information that we must keep by law.</p>
-      <h3>California choices</h3>
-      <p>California residents may request to know, delete, or correct personal information, and may opt out of the sale or sharing of personal information where those terms apply. Bluespacestudioz does not sell or share the app data described in this policy for cross-context behavioral advertising. To exercise a California privacy right, email <a href="mailto:bluespacestudioz.support@gmail.com">bluespacestudioz.support@gmail.com</a> with “California privacy request” in the subject line. We do not discriminate against you for exercising a privacy right.</p>
-      <h3>Analytics and advertising choices</h3>
-      <p>You can reset or delete the Android Advertising ID in Android settings. Because the audited version does not serve ads, it has no in-app personalized-ad preference flow. If AdMob is added later, users in the EEA, UK, or Switzerland must be given the applicable Google-certified consent choices before personalized advertising is served, and the app must provide a way to revisit those choices.</p>
+      <h2>9. Your Rights and Choices</h2>
+      <p>For the TV-control features, BlueSpace Studios does not maintain a user account or a searchable database containing your saved-TV records. You can remove local TVs and preferences through the app, Android settings, or by uninstalling the app. To ask a privacy question about information you send by email, contact <a href="mailto:bluespacestudioz.support@gmail.com">bluespacestudioz.support@gmail.com</a>. Do not send passwords, pairing tokens, PINs, or payment information.</p>
+      <p>Firebase Analytics, Crashlytics, advertising, and Remote Config data are handled by Google or the relevant provider. We cannot edit or delete an individual provider-side event from inside the app, and we do not promise deletion of data that we do not control. Use the provider's privacy controls and notices for provider-held data; you may also contact us so we can identify which provider is involved.</p>
+      <p>Depending on where you live, you may have the right to access, correct, delete, restrict, object to, or receive a portable copy of personal information, and to withdraw consent where processing is based on consent. You may also complain to your local data-protection authority. We may need to verify a request and may keep information that the law requires us to retain.</p>
+      <h3>Advertising and device choices</h3>
+      <p>You can reset or delete the Android Advertising ID, manage app notifications, decline or revisit available Google ad-consent choices, and choose whether to use voice input or email feedback. The current app does not provide a separate in-app switch to opt out of Firebase Analytics.</p>
     </section>
 
-    <section id="children">
-      <h2>Children's Privacy</h2>
-      <p>Samsung TV Remote is a general-purpose utility and is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through Support Chat, contact us so we can investigate and delete it when appropriate.</p>
-      <p>The Play Console content rating, target-audience declaration, and actual audience must accurately describe the app. If the app is targeted to children or to a mixed audience that includes children, Google Play Families requirements may apply to the app, its support feature, Analytics, and any future advertising SDKs.</p>
-    </section>
-
-    <section id="security">
-      <h2>Data Security</h2>
-      <p>Firebase traffic is sent using encrypted HTTPS/TLS connections, and Firebase states that its relevant services encrypt data in transit and, where applicable, at rest. Local records are stored inside Android's app sandbox. The app's Room database stores pairing/session credentials locally and does not intentionally log them or attach them to support diagnostics.</p>
-      <p>Communication with a TV occurs over the local network using the protocol supported by that TV. Some local protocols may not use transport encryption, so use the app only on a network you trust. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+    <section id="legal-bases">
+      <h2>10. Legal Bases and Jurisdiction</h2>
+      <p>For users in the European Economic Area, the United Kingdom, and Switzerland, our legal basis generally is:</p>
+      <ul>
+        <li><strong>Contract or requested service:</strong> local TV control, saved settings, and feedback or assistance you request;</li>
+        <li><strong>Legitimate interests:</strong> security, crash diagnosis, reliability, service maintenance, abuse prevention, and product improvement, balanced against your rights;</li>
+        <li><strong>Consent:</strong> personalized advertising or any other processing for which consent is legally required; and</li>
+        <li><strong>Legal obligation:</strong> where processing is needed to comply with law.</li>
+      </ul>
+      <p>Other jurisdictions may provide additional rights, including under India's Digital Personal Data Protection Act, 2023 and other applicable privacy laws.</p>
     </section>
 
     <section id="transfers">
-      <h2>International Data Transfers</h2>
-      <p>Bluespacestudioz is based in India and the app is intended to be available worldwide. Information sent to Firebase or Google may be processed in India, the United States, or other countries where Google or its service providers operate. Those countries may have data-protection rules different from your country. We rely on the service providers' applicable data-processing terms, contractual safeguards, and other legally recognized transfer mechanisms where required.</p>
+      <h2>11. International Transfers</h2>
+      <p>BlueSpace Studios is based in India and the app may be used worldwide. Information sent to Google or Firebase may be processed in India, the United States, or other countries where Google and its providers operate. Those countries may have different data-protection rules. Where required, we rely on applicable adequacy decisions, standard contractual clauses, consent, or other legally recognized transfer mechanisms.</p>
+    </section>
+
+    <section id="security">
+      <h2>12. Security</h2>
+      <p>Local records are stored inside Android's app sandbox. Pairing/session credentials are stored locally and are not intentionally logged. Firebase, Google Mobile Ads, and Remote Config communications use provider-supported HTTPS/TLS connections; Google and Firebase describe additional encryption and access controls in their own documentation.</p>
+      <p>TV communication takes place on your local network. Some compatible TV protocols use unencrypted local HTTP or WebSocket traffic, so use the app only on a network you trust. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section id="children">
+      <h2>13. Children's Privacy</h2>
+      <p>Samsung TV Remote is a general-purpose utility and is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent personal information to us, contact us so we can investigate and delete it when appropriate.</p>
+      <p>If the app is later directed to children or a mixed audience that includes children, the app's audience declarations, analytics, ads, and consent flow must be reviewed for COPPA, Google Play Families, the UK Children's Code, and other applicable requirements.</p>
+    </section>
+
+    <section id="tracking">
+      <h2>14. Cookies and Similar Technologies</h2>
+      <p>The Android app does not use browser cookies for its local TV-control function. Firebase, Google Mobile Ads, Google Play services, and related SDKs use identifiers, local storage, and similar technologies to provide analytics, crash reporting, configuration, consent, and advertising. You can manage applicable advertising choices through Android settings and the Google consent controls described above.</p>
     </section>
 
     <section id="changes">
-      <h2>Changes to This Policy</h2>
-      <p>We may update this policy when the app, its SDKs, data practices, or legal requirements change. We will post the revised policy at this location and update the “Last updated” date. If a change is material, we may also provide notice in the app or through another appropriate channel.</p>
+      <h2>15. Changes to This Policy</h2>
+      <p>We may update this policy when the app, SDKs, data practices, or legal requirements change. We will post the revised policy at this location and update the “Last updated” date. If a change is material, we may also provide notice in the app or through another appropriate channel.</p>
     </section>
 
     <section id="contact">
-      <h2>Contact Us</h2>
-      <p><strong>Bluespacestudioz</strong></p>
+      <h2>16. Contact Us</h2>
+      <p><strong>BlueSpace Studios</strong></p>
       <p>For privacy questions, rights requests, or support about data handling, email <a href="mailto:bluespacestudioz.support@gmail.com">bluespacestudioz.support@gmail.com</a>.</p>
       <p>App: Samsung TV Remote<br>Package name: <code>com.bluespacestudioz.samsung.tv.remote</code></p>
     </section>
   </main>
-
-  <footer class="wrap">
-    This Privacy Policy applies to Samsung TV Remote and its current Android release as audited on September 10, 2026.
-  </footer>
 </body>
 </html>
